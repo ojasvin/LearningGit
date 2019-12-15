@@ -41,12 +41,12 @@ void DFSGraph::DFS()
     // initially none of the vertices are visited 
     bool *visited = new bool[V]; 
     for (int i = 0; i < V; i++) 
-    visited[i] = false; 
+        visited[i] = false; 
       
         // explore the vertices one by one by recursively calling  DFS_util
     for (int i = 0; i < V; i++) 
     if (visited[i] == false) 
-    DFS_util(i, visited); 
+        DFS_util(i, visited); 
 } 
   
 int main() 
